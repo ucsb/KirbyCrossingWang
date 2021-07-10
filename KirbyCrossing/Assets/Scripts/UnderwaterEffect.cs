@@ -33,7 +33,7 @@ public class UnderwaterEffect : MonoBehaviour
             
             if (isUnderwater)
                 SetUnderwater();
-            if (!isUnderwater) 
+            else 
                 SetNormal();
         }
     }
