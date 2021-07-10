@@ -8,8 +8,7 @@ public class WaterLevelManager : MonoBehaviour
     public float playedTime;
     public float waterHeight;
     private float startWaterHeight = -0.5f;
-    // private float maxWaterHeight = -0.01f;
-    private float maxWaterHeight = 10f;
+    private float maxWaterHeight = -0.01f;
     private GameObject waterPlane;
 
     private bool risingWater = true;
@@ -21,12 +20,14 @@ public class WaterLevelManager : MonoBehaviour
         waterPlane = GameObject.FindGameObjectWithTag("Water Plane");
         waterHeight = waterPlane.transform.position.y;
         
-        InvokeRepeating("ChangeWaterLevel", 0, 0.01f);
+        // change water level repeatedly
+        InvokeRepeating("ChangeWaterLevel", 0, 0.05f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // get water height
         waterHeight = waterPlane.transform.position.y;
     }
 

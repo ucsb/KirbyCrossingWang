@@ -37411,6 +37411,7 @@ MonoBehaviour:
   waterPlanePrefab: {fileID: 3155589723677137099, guid: 946d509ed72ad9c4689a8b36c163b6bb,
     type: 3}
   playedTime: 0
+  waterHeight: 0
 --- !u!4 &1273706469
 Transform:
   m_ObjectHideFlags: 0
@@ -61952,7 +61953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84ba15e339056994f9b543c8b49eea2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterHeight: -0.5
+  waterEffectHeight: -0.7
 --- !u!1 &2084883079
 GameObject:
   m_ObjectHideFlags: 0
