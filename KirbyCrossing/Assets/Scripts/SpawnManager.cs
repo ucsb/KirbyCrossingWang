@@ -54,15 +54,5 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         isCoroutineExecuting = false;
     }
-
-   
-   // void Update()
-    //{
-        // Cancel only the LaunchProjectile invoke
-      //  if (Input.GetButton("Fire1"))
-        //    CancelInvoke("LaunchProjectile");
-    //}
-//}
-
 }
 
